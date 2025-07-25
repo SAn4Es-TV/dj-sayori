@@ -10,8 +10,8 @@ generator client {
 }
 
 datasource db {
-  provider = "mysql"
-  url      = env("DATABASE_URL")
+  provider = "sqlite"
+  url      = "file:./lavamusic.db"
 }
 
 model Bot {
@@ -54,7 +54,7 @@ model Playlist {
   id     String  @id @default(uuid())
   userId String
   name   String
-  tracks Json? // Store the array of encoded tracks as a JSON string
+  tracks String? // Store the array of encoded tracks as a JSON string
 
   @@unique([userId, name])
 }
