@@ -28,6 +28,7 @@ try {
   const logFile = fs.readFileSync("./src/utils/LavaLogo.txt", "utf-8");
   console.log(theme.purpleNeon(logFile));
   shardStart(logger);
+  require('./keepAlive.js');
 } catch (err) {
   logger.error("[CLIENT] An error has occurred:", err);
 }

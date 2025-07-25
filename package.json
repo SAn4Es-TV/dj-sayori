@@ -55,6 +55,7 @@
     "@top-gg/sdk": "^3.1.6",
     "discord.js": "^14.21.0",
     "dotenv": "^17.0.1",
+    "express": "^5.1.0",
     "fastify": "^5.4.0",
     "fastify-plugin": "^5.0.1",
     "genius-lyrics-api": "^3.2.1",
